@@ -46,7 +46,6 @@ def widget(frame_1, frame_2, frame_3, frame_bottom):
 def find_bmi():
     height = height_var.get()
     weight = weight_var.get()
-    # check height and weight filled in
     if height and weight:
         height = float(height) / 100.0
         bmi = round(float(weight) / height ** 2, 2)
