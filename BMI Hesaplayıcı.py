@@ -49,9 +49,9 @@ def find_bmi():
     if height and weight:
         height = float(height) / 100.0
         bmi = round(float(weight) / height ** 2, 2)
-        show_data.config(text = bmi)
+        show_data.config(text =f"your BMI : {bmi}")
     else:
-        show_data.config(text='')
+        show_data.config(text='enter both weight!')
 
 
 main = mainwindow()
